@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>陈智越的简单网页应用</title>
+        <script>
+        var password = prompt('Your password')
+        if (password == '07190508'){
+            alert('You got it')
+        } else {
+            alert('Sor')
+        }
+
+        function color(str){
+            document.body.style.backgroundColor = str;
+        }
+        </script>
+    </head>
+    <body>
+        <input type="button" value="设为红色" onclick="color('red')">
+        <input type="button" value="设为黄色" onclick="color('yellow')">
+        <input type="button" value="设为自定义颜色" onclick="color('#33ee00')">
+        <input type="button" value="设为自定义颜色" onclick="color('#22ee00')">
+    </body>
+    </html>
