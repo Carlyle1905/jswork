@@ -14,18 +14,12 @@
     </div>
     <div>
         <p>三级联动</p>
-        <select id="college" onchange="addmajor(this.value);">
-            <option value="-1">请选择</option>
-            <option value="0">计设院</option>
-            <option value="1">电气</option>
-            <option value="2">汽修</option>
-        </select>
-        <select id="major" onchange="addclass(this.value);">
+        <select id="collegSelect">
             <option value="-1">请选择</option>
         </select>
-        <select id="classoh">
-        <option value="-1">请选择</option>
-        </select>
+        <select id="majorSelect"></select>
+        <select id="classSelect"></select>
+    </div>
     </div>
 </body>
 <script src="index.js"></script>
