@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>陈的三级联动</title>
+</head>
+<body>
+    <div>
+        <p>斐波那契数列</p>
+        <div>
+            请输入项:<input id="order" type="text">
+            <input type="button" value="计算" onclick="cal()">
+        </div>
+        <div>斐波那契数列为<input id='Perbonacci' type="text"></div>
+    </div>
+    <div>
+        <p>三级联动</p>
+        <select id="college" onchange="addmajor(this.value);">
+            <option value="-1">请选择</option>
+            <option value="0">计设院</option>
+            <option value="1">电气</option>
+            <option value="2">汽修</option>
+        </select>
+        <select id="major" onchange="addclass(this.value);">
+            <option value="-1">请选择</option>
+        </select>
+        <select id="classoh">
+        <option value="-1">请选择</option>
+        </select>
+    </div>
+</body>
+<script src="index.js"></script>
+<script src="cascade.js"></script>
+</html>
