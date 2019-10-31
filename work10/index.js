@@ -22,14 +22,14 @@ function monkey(){
     document.getElementById('monkeyking').innerText = monkey[0]
 }
 function stat(){
-    let str = document.getElementById("str").value
+    let str =document.getElementById('str').value
     let obj = {}
-    for(let i=0;i<str.length;i++){
-        if(!obj[str.charAt(i)]){
-            obj[str.charAt(i)]=1;
-        }else{
-            obj[str.charAt(i)]++
-        }
-      }
+    let sz = str.split("")
+    sz = sz.sort()
+    for (let i = 0; i < str.length; ++i){
+        let cc = sz[i]
+        obj[cc] = (obj [cc] + 1) || 1;
+    } 
+
       document.getElementById('result').innerText = JSON.stringify(obj)
     }
