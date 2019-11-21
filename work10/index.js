@@ -29,7 +29,7 @@ function stat(){
     for (let i = 0; i < str.length; ++i){
         let cc = sz[i]
         obj[cc] = (obj [cc] + 1) || 1;
-    } 
+         } 
 
       document.getElementById('result').innerText = JSON.stringify(obj)
-    }
+                       }
