@@ -6,11 +6,11 @@ function monkey(){
     if(isNaN(total)||isNaN(kick)){
         alert('请输入数字')
         return
-    }
+      }
     let monkey=[]
     for (let i=1;i<=total;i++ ){
         monkey.push(i)
-    }
+      }
     let i = 0
     while (monkey.length>1){
         i++;
@@ -20,7 +20,7 @@ function monkey(){
         }
     }
     document.getElementById('monkeyking').innerText = monkey[0]
-}
+      }
 function stat(){
     let str =document.getElementById('str').value
     let obj = {}
